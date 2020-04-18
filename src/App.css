@@ -59,7 +59,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 3rem 0;
 }
 
 .projects-section .featured-text {
@@ -80,7 +80,7 @@ body {
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 2rem;
   }
   .projects-section .project-text hr {
     border-color: #64a19d;
@@ -89,57 +89,11 @@ body {
   }
 }
 
-/* 
-.text {
-  position: absolute;
-  width: 450px;
-  left: 50%;
-  height: 40px;
-  top: 50%;
-  margin-top: -20px;
-  margin-left: -225px;
-  color: #161616;
+.card:hover {
+  /* animat; */
+  transform: translateY(10px);
 }
 
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
+footer {
+  padding: 1rem 0;
 }
-
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-}
-
-.letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
- */
