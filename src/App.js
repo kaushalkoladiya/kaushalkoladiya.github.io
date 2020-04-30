@@ -1,5 +1,7 @@
 import React from 'react';
 
+// import Project from './components/Project/Project';
+
 import './App.css';
 import Avtar from './images/avtar.JPG';
 import Love from './images/love.jpg';
@@ -72,12 +74,12 @@ class App extends React.Component {
               <div className="col-xl-4 col-lg-5">
                 <div className="featured-text text-center text-lg-left">
                   <h4>Headline</h4>
-                  <p className="text-black-50 mb-0">Let's walk through my projects and blogs.</p>
+                  <p className="text-black-50 mb-0">Let's walk through my blogs.</p>
                 </div>
               </div>
             </div>
             
-            <div className="row m-3"> 
+            {/* <div className="row m-3"> 
               <div className="col display-4 text-center d-block">
                 Projects
               </div>
@@ -86,21 +88,45 @@ class App extends React.Component {
             <div className="row m-2 justify-content-center">
               <div className="card shadow m-2" style={{width: "18rem"}}>
                 <div className="card-body">
+                  <h5 className="card-title">BlogNode backend</h5>
+                  <p className="card-text">A backend Node.js app for BlogNode.</p>
+                  <a href="https://github.com/kaushalkoladiya/covid-19" className="card-link">GitHub Link</a>
+                  <a href="https://coronadashboard.netlify.com" className="card-link">Go for website</a>
+                </div>
+              </div>
+              <div className="card shadow m-2" style={{width: "18rem"}}>
+                <div className="card-body">
                   <h5 className="card-title">Corona Dashboard</h5>
                   <p className="card-text">A graphical representation of Covid-19 Dashboard.</p>
-                  <a href="https://github.com/kausHal789/covid-19" className="card-link">GitHub Link</a>
+                  <a href="https://github.com/kaushalkoladiya/covid-19" className="card-link">GitHub Link</a>
                   <a href="https://coronadashboard.netlify.com" className="card-link">Go for website</a>
+                </div>
+              </div>
+              <div className="card shadow m-2" style={{width: "18rem"}}>
+                <div className="card-body">
+                  <h5 className="card-title">Corona Dashboard</h5>
+                  <p className="card-text">A graphical representation of Covid-19 Dashboard.</p>
+                  <a href="https://github.com/kaushalkoladiya/covid-19" className="card-link">GitHub Link</a>
+                  <a href="https://coronadashboard.netlify.com" className="card-link">Go for website</a>
+                </div>
+              </div>
+              <div className="card shadow m-2" style={{width: "18rem"}}>
+                <div className="card-body">
+                  <h5 className="card-title">Book App</h5>
+                  <p className="card-text">A normal book app for learning new concet.</p>
+                  <a href="https://github.com/kaushalkoladiya/bookapp" className="card-link">GitHub Link</a>
+                  
                 </div>
               </div>
               <div className="card m-2 shadow" style={{width: "18rem"}}>
                 <div className="card-body">
                   <h5 className="card-title">News</h5>
                   <p className="card-text">A latest news headlines.</p>
-                  <a href="https://github.com/kausHal789/corona-news" className="card-link">GitHub Link</a>
-                  <a href="https://headlines.netlify.com" className="card-link">Go for website</a>
+                  <a href="https://github.com/kaushalkoladiya/newsglobe" className="card-link">GitHub Link</a>
+                  <a href="https://newsglobe.netlify.com" className="card-link">Go for website</a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="row m-3"> 
               <div className="col display-4 text-center d-block">
@@ -116,7 +142,7 @@ class App extends React.Component {
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>ES6 comes with a new function syntax which looks very different from others...</p>
-                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushal789/javascript-arrow-function-2513" className="btn btn-link text-primary">Read more</a></footer>
+                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushalkoladiya/javascript-arrow-function-2513" className="btn btn-link text-primary">Read more</a></footer>
                   </blockquote>
                 </div>
               </div>
@@ -125,7 +151,7 @@ class App extends React.Component {
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>JavaScript ES6 comes with the destructuring assignments. A name define its use, destructure values from an array and properties from an object..</p>
-                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushal789/javascript-destructuring-1b4d" className="btn btn-link text-primary">Read more</a></footer>
+                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushalkoladiya/javascript-destructuring-1b4d" className="btn btn-link text-primary">Read more</a></footer>
                   </blockquote>
                 </div>
               </div>
@@ -152,7 +178,7 @@ class App extends React.Component {
             <a href="https://www.facebook.com/kaushal.koladiya.1" className="mx-2">
               <i className="fa fa-lg fa-facebook"></i>
             </a> */}
-            <a href="https://github.com/kausHal789" className="mx-2">
+            <a href="https://github.com/kaushalkoladiya" className="mx-2">
               <i className="fa fa-lg fa-github"></i>
             </a>
           </div>
