@@ -142,7 +142,7 @@ class App extends React.Component {
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>ES6 comes with a new function syntax which looks very different from others...</p>
-                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushalkoladiya/javascript-arrow-function-2513" className="btn btn-link text-primary">Read more</a></footer>
+                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushal/javascript-arrow-function-2513" className="btn btn-link text-primary">Read more</a></footer>
                   </blockquote>
                 </div>
               </div>
@@ -151,7 +151,7 @@ class App extends React.Component {
                 <div className="card-body">
                   <blockquote className="blockquote mb-0">
                     <p>JavaScript ES6 comes with the destructuring assignments. A name define its use, destructure values from an array and properties from an object..</p>
-                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushalkoladiya/javascript-destructuring-1b4d" className="btn btn-link text-primary">Read more</a></footer>
+                    <footer className="blockquote-footer">Kaushal Koladiya <a href="https://dev.to/kaushal/javascript-destructuring-1b4d" className="btn btn-link text-primary">Read more</a></footer>
                   </blockquote>
                 </div>
               </div>
