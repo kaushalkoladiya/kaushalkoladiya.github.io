@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Services from "@/components/sections/Services";
 import Testimonials from "@/components/sections/Testimonials";
 import { Particles } from "@/components/ui/particles";
+import Blog from "@/components/sections/Blog";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Skills />
         <Services />
         <Projects />
+        <Blog />
         <Testimonials />
         <Contact />
       </main>
