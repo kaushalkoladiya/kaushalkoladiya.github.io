@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GithubIcon, LinkedinIcon } from 'lucide-react';
+import { ArrowDown, GithubIcon, LinkedinIcon } from 'lucide-react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -15,17 +15,24 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className='text-center'>
           <motion.h1
-            className='text-6xl font-bold mb-6'
+            className='text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}>
-            Full Stack Developer
+            transition={{ duration: 0.8, delay: 0.2 }}>
+            Kaushal Koladiya
           </motion.h1>
+          <motion.h2
+            className='text-4xl font-bold mb-6'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}>
+            Software Engineer
+          </motion.h2>
           <motion.p
             className='text-xl text-muted-foreground mb-8 max-w-2xl mx-auto'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}>
+            transition={{ duration: 0.5, delay: 0.6 }}>
             Crafting scalable solutions and exceptional user experiences with
             modern technologies
           </motion.p>
@@ -33,7 +40,7 @@ export default function Hero() {
             className='flex gap-4 justify-center'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}>
+            transition={{ duration: 0.5, delay: 0.8 }}>
             <Link
               className={buttonVariants({ variant: 'outline', size: 'lg' })}
               href={'https://github.com/kaushalkoladiya'}
@@ -48,6 +55,25 @@ export default function Hero() {
               <LinkedinIcon className='mr-2 h-4 w-4' />
               LinkedIn
             </Link>
+          </motion.div>
+
+          <motion.div
+            className='mt-8 left-0 bottom-8 absolute w-full'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1 }}>
+            <Button
+              variant='outline'
+              size='lg'
+              className='group'
+              onClick={() =>
+                document
+                  .getElementById('about')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }>
+              Explore More
+              <ArrowDown className='ml-2 h-4 w-4 transition-transform group-hover:translate-y-1' />
+            </Button>
           </motion.div>
         </motion.div>
       </div>

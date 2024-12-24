@@ -8,7 +8,7 @@ const experiences = [
   {
     company: "Girls First Finance",
     position: "Full Stack Developer",
-    period: "Jan 2024 – Oct 2024",
+    period: "Jan 2024 - Present",
     achievements: [
       "Spearheaded identity verification system using Yoti SDK",
       "Architected real-time chat infrastructure with WebSocket",
@@ -20,7 +20,7 @@ const experiences = [
   {
     company: "Blossom.team",
     position: "Full Stack Developer",
-    period: "Sep 2021 – Jan 2024",
+    period: "Sep 2021 - Jan 2024",
     achievements: [
       "Led development team in architecting enterprise scheduling system",
       "Designed comprehensive sponsor analytics dashboard",
@@ -29,7 +29,19 @@ const experiences = [
     ],
     tech: "Next.js, React Native, Python, React.js, AWS, Node.js, SQL, Customer.io, Segment, Twilio"
   },
-  
+  {
+    company: "Freelancer",
+    position: "Full Stack Developer",
+    period: "Apr 2020 - Sep 2021",
+    achievements: [
+      "Designed data collection app",
+      "Integrated dual-payment processing system",
+      "Developed automated document management system",
+      "Implemented government ID verification"
+    ],
+    tech: "Next.js, React Native, Python, React.js, AWS, Node.js, SQL, Customer.io, Segment, Twilio"
+  },
+
 ];
 
 export default function Experience() {
@@ -70,9 +82,9 @@ export default function Experience() {
                         <li key={i} className="text-muted-foreground">{achievement}</li>
                       ))}
                     </ul>
-                    <p className="text-sm text-muted-foreground">
+                    {/* <p className="text-sm text-muted-foreground">
                       <span className="font-semibold">Technologies:</span> {exp.tech}
-                    </p>
+                    </p> */}
                   </CardContent>
                 </Card>
               </motion.div>
