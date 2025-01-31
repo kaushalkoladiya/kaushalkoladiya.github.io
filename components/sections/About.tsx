@@ -21,7 +21,7 @@ export default function About() {
         >
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <p className="text-lg text-muted-foreground mb-6">
-            A passionate Full Stack Developer with 5 years of experience in building scalable web applications
+            A passionate Full Stack Developer with 7+ years of experience in building scalable web applications
             and distributed systems. Specialized in modern JavaScript frameworks, cloud architecture, and
             delivering high-performance solutions.
           </p>
