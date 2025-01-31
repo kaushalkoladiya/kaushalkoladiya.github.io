@@ -27,7 +27,7 @@ export default function About() {
           </p>
           <div className="grid grid-cols-3 gap-6 mt-12">
             <div className="p-6 bg-background rounded-lg shadow-lg">
-              <h3 className="font-bold text-xl mb-2">5+</h3>
+              <h3 className="font-bold text-xl mb-2">7+</h3>
               <p className="text-muted-foreground">Years Experience</p>
             </div>
             <div className="p-6 bg-background rounded-lg shadow-lg">
