@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, GithubIcon, LinkedinIcon } from 'lucide-react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 export default function Hero() {
   return (
@@ -15,14 +16,14 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className='text-center'>
           <motion.h1
-            className='text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50'
+            className='text-7xl font-bold mb-6 heading-gradient'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}>
             Kaushal Koladiya
           </motion.h1>
           <motion.h2
-            className='text-4xl font-bold mb-6'
+            className='text-4xl font-bold mb-6 text-foreground/90'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}>
@@ -42,14 +43,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}>
             <Link
-              className={buttonVariants({ variant: 'outline', size: 'lg' })}
+              className={buttonVariants({ variant: 'outline', size: 'lg' }) + ' card-hover'}
               href={'https://github.com/kaushalkoladiya'}
               target='_blank'>
               <GithubIcon className='mr-2 h-4 w-4' />
               GitHub
             </Link>
             <Link
-              className={buttonVariants({ variant: 'outline', size: 'lg' })}
+              className={buttonVariants({ variant: 'outline', size: 'lg' }) + ' card-hover'}
               href={'https://linkedin.com/in/kaushalkoladiya/'}
               target='_blank'>
               <LinkedinIcon className='mr-2 h-4 w-4' />
@@ -65,7 +66,7 @@ export default function Hero() {
             <Button
               variant='outline'
               size='lg'
-              className='group'
+              className='group card-hover'
               onClick={() =>
                 document
                   .getElementById('about')
@@ -83,9 +84,13 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.1 }}
         transition={{ duration: 1 }}>
-        <div className='absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-30' />
+        <div className='absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/20 opacity-30 dark:opacity-20' />
         <div className='absolute inset-0 bg-grid-white/10' />
       </motion.div>
+
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
     </section>
   );
 }
