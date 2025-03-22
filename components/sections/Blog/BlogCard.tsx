@@ -20,9 +20,9 @@ export function BlogCard({ title, excerpt, date, link, index }: BlogCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}>
-      <Card className='h-full hover:shadow-lg transition-shadow'>
+      <Card className='h-full bg-background/50 backdrop-blur-sm card-hover border border-border transition-shadow'>
         <CardHeader>
-          <CardTitle className='line-clamp-2'>{title}</CardTitle>
+          <CardTitle className='line-clamp-2 text-primary'>{title}</CardTitle>
           <div className='flex items-center gap-4 text-sm text-muted-foreground mt-2'>
             <span className='flex items-center gap-1'>
               <Calendar className='h-4 w-4' />
@@ -37,7 +37,7 @@ export function BlogCard({ title, excerpt, date, link, index }: BlogCardProps) {
             target='_blank'
             className={buttonVariants({
               variant: 'ghost',
-              className: 'group',
+              className: 'group card-hover',
             })}>
             Read More
             <ArrowRight className='ml-2 h-4 w-4 transition-transform group-hover:translate-x-1' />

@@ -35,7 +35,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className='py-20 bg-muted/50'
+      className='py-20 section-gradient section-divider'
       id='testimonials'>
       <div className='container px-4 mx-auto'>
         <motion.div
@@ -43,7 +43,7 @@ export default function Testimonials() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6 }}>
-          <h2 className='text-3xl font-bold mb-12 text-center'>
+          <h2 className='text-3xl font-bold mb-12 text-center heading-gradient'>
             Client Testimonials
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -53,10 +53,10 @@ export default function Testimonials() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}>
-                <Card className='h-full relative'>
+                <Card className='h-full relative bg-background/50 backdrop-blur-sm card-hover border border-border'>
                   <CardContent className='p-6'>
                     <Quote className='h-8 w-8 text-primary/20 absolute top-4 right-4' />
-                    <h3 className='text-xl font-semibold mb-4'>
+                    <h3 className='text-xl font-semibold mb-4 text-primary'>
                       {testimonial.title}
                     </h3>
                     <p className='text-muted-foreground mb-4 italic'>
@@ -79,7 +79,7 @@ export default function Testimonials() {
             <Link
               href='https://www.upwork.com/freelancers/~015ce6a7664dfb459d'
               target='_blank'
-              className='inline-flex items-center text-primary hover:text-primary/80 transition-colors'>
+              className='inline-flex items-center text-primary hover:text-primary/80 transition-colors card-hover p-2 rounded-md'>
               View my Upwork Profile
               <svg
                 className='ml-2 h-4 w-4'
