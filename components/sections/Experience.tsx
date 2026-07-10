@@ -9,7 +9,7 @@ const experiences = [
     title: "Full Stack Developer",
     company: "Girls First Finance",
     location: "New York, NY (Remote)",
-    duration: "Jan 2024 - Present",
+    duration: "Jan 2024 - Apr 2025",
     description: "Leading development of microservices and real-time communication systems with focus on performance and scalability.",
     responsibilities: [
       "Led Agile/Scrum ceremonies, conducted peer code reviews, and mentored team members on TDD best practices",

@@ -32,7 +32,7 @@ export default function About() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.2 }}
             >
-              <h3 className="font-bold text-2xl mb-2 text-primary">6+</h3>
+              <h3 className="font-bold text-2xl mb-2 text-primary">7+</h3>
               <p className="text-muted-foreground">Years Experience</p>
             </motion.div>
             <motion.div 
